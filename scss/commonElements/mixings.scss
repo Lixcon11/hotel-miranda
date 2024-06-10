@@ -1,0 +1,17 @@
+@import "./variables.scss";
+
+@mixin styledButton($theme: $pale-gold, $width: 216px) {
+    background-color: $theme;
+    color: $white;
+    line-height: 15px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    cursor: pointer;
+    border: none;
+    width: $width;
+    height: 60px;
+    border-radius: 0;
+    appearance: none;
+    text-transform: uppercase;
+  }

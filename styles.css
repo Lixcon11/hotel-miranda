@@ -1,3 +1,35 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Old Standard TT";
+}
 
+p {
+  font-family: Roboto;
+}
+
+button, span, input, input::placeholder, a, li {
+  font-family: Archivo;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Old Standard TT";
+}
+
+p {
+  font-family: Roboto;
+}
+
+button, span, input, input::placeholder, a, li {
+  font-family: Archivo;
+}
+
+html, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+}
 
 /*# sourceMappingURL=styles.css.map */
