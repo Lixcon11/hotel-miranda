@@ -14,12 +14,37 @@
         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script type="module" src="./js/index.js" defer></script>
     <title>Home</title>
 </head>
 <body>
     <header>
-        <img src="./assets/icons/user.webp"/>
-        <img src="./assets/icons/loupe.webp"/>
+        <div class="container">
+            <div class="container__menu">
+                <img id="menu" src="./assets/icons/menu.webp"/>
+                <img class="none" id="cross" src="./assets/icons/close.webp"/>
+            </div>
+            <div class="container__logo">
+                <span class="letter">H</span>
+                <div class="name">
+                    <span>Hotel</span>
+                    <span>Miranda</span>
+                </div>
+            </div>
+            <nav class="none" id="navbar">
+                <a>About&nbsp;Us</a>
+                <a>Rooms</a>
+                <a>Offers</a>
+                <a>Contanct</a>
+            </nav>
+            <diV class="container__icons">
+                <img src="./assets/icons/user.webp"/>
+                <img src="./assets/icons/loupe.webp"/>
+            </diV>
+        </div>
     </header>
+    <main class="home">
+
+    </main>
 </body>
 </html>

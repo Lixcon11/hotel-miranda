@@ -1,10 +1,67 @@
 @import "./commonElements/commons.scss";
 
 header {
+    position: fixed;
+    width: 100%;
+    height: 70px;
 
-    img {
-        color: $darker-black;
-        width: 19px;
-        height: 19px;
+    & .container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: white;
+        box-shadow: 0px 3px 6px 0px #0000004A;
+
+
+        &__logo {
+            position: absolute;
+            top: 50%;
+            left: 65px;
+            transform: translateY(-50%);
+            @include logo;
+
+            .letter {
+                cursor: pointer;
+            }
+        }
+
+        &__menu {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+        }
+
+        nav {
+            position: absolute;
+            height: 200px;
+            width: 100%;
+            box-shadow: 0px 4px 4px 0px #0000004A;
+            top: 70px;
+            background-color: white;
+            z-index: -1;
+
+            a {
+                display: block;
+                margin: 28px 0px 0px 10px;
+                font-weight: 600;
+                cursor: pointer;
+            }
+        }
+
+        &__icons {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+        }
+
+        img {
+            color: $darker-black;
+            width: 19px;
+            height: 19px;
+            margin: 0px 8px;
+            cursor: pointer;
+        }
     }
 }
