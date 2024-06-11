@@ -2,7 +2,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Old Standard TT";
 }
 
-p {
+p, label {
     font-family: Roboto;
 }
 
@@ -12,4 +12,23 @@ button, span, input, input::placeholder, a, li {
 
 .none {
     display: none;
+}
+
+.filler {
+    height: 70px;
+}
+
+.presentation {
+    background-color: $light-black;
+    width: 100%;
+    padding: 80px 20px 100px;
+
+    p {
+        @include styledParagraph;
+    }
+
+    h2 {
+        @include styledHeaders;
+        margin-top: 20px;
+    }
 }

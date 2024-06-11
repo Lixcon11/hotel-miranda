@@ -16,9 +16,28 @@
     text-transform: uppercase;
   }
 
-  @mixin logo() {
-    height: 35px;
+  @mixin styledParagraph($theme: $white) {
+    font-family: Archivo;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 2.8px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $theme;
+  }
 
+  @mixin styledHeaders($theme: $white) {
+    font-weight: 400;
+    font-size: 56px;
+    letter-spacing: -1.2px;
+    line-height: 60px;
+    text-transform: capitalize;
+    color: $theme;
+  }
+
+  @mixin logo() {
+    margin-top: 3px;
+    
     .letter {
       display: inline-block;
       padding: 10px;

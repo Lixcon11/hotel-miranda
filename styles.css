@@ -2,7 +2,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Old Standard TT";
 }
 
-p {
+p, label {
   font-family: Roboto;
 }
 
@@ -12,13 +12,41 @@ button, span, input, input::placeholder, a, li {
 
 .none {
   display: none;
+}
+
+.filler {
+  height: 70px;
+}
+
+.presentation {
+  background-color: #333;
+  width: 100%;
+  padding: 80px 20px 100px;
+}
+.presentation p {
+  font-family: Archivo;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2.8px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #FFF;
+}
+.presentation h2 {
+  font-weight: 400;
+  font-size: 56px;
+  letter-spacing: -1.2px;
+  line-height: 60px;
+  text-transform: capitalize;
+  color: #FFF;
+  margin-top: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Old Standard TT";
 }
 
-p {
+p, label {
   font-family: Roboto;
 }
 
@@ -28,6 +56,34 @@ button, span, input, input::placeholder, a, li {
 
 .none {
   display: none;
+}
+
+.filler {
+  height: 70px;
+}
+
+.presentation {
+  background-color: #333;
+  width: 100%;
+  padding: 80px 20px 100px;
+}
+.presentation p {
+  font-family: Archivo;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2.8px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #FFF;
+}
+.presentation h2 {
+  font-weight: 400;
+  font-size: 56px;
+  letter-spacing: -1.2px;
+  line-height: 60px;
+  text-transform: capitalize;
+  color: #FFF;
+  margin-top: 20px;
 }
 
 header {
@@ -47,7 +103,7 @@ header .container__logo {
   top: 50%;
   left: 65px;
   transform: translateY(-50%);
-  height: 35px;
+  margin-top: 3px;
 }
 header .container__logo .letter {
   display: inline-block;
@@ -101,7 +157,7 @@ header .container__icons {
   transform: translateY(-50%);
 }
 header .container img {
-  color: #111;
+  color: white;
   width: 19px;
   height: 19px;
   margin: 0px 8px;
@@ -112,7 +168,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Old Standard TT";
 }
 
-p {
+p, label {
   font-family: Roboto;
 }
 
@@ -124,9 +180,133 @@ button, span, input, input::placeholder, a, li {
   display: none;
 }
 
-.home {
-  height: 1000px;
+.filler {
+  height: 70px;
+}
+
+.presentation {
   background-color: #333;
+  width: 100%;
+  padding: 80px 20px 100px;
+}
+.presentation p {
+  font-family: Archivo;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2.8px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #FFF;
+}
+.presentation h2 {
+  font-weight: 400;
+  font-size: 56px;
+  letter-spacing: -1.2px;
+  line-height: 60px;
+  text-transform: capitalize;
+  color: #FFF;
+  margin-top: 20px;
+}
+
+.home .presentation__buttons {
+  margin-top: 50px;
+}
+.home .presentation__buttons button {
+  background-color: #BEAD8E;
+  color: #FFF;
+  line-height: 15px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  cursor: pointer;
+  border: none;
+  width: 216px;
+  height: 60px;
+  border-radius: 0;
+  appearance: none;
+  text-transform: uppercase;
+  margin: 15px 0px;
+}
+.home .presentation__buttons button.subtle {
+  background-color: inherit;
+  border: 2px solid #FFF;
+}
+.home__checking {
+  background-color: #222;
+  padding: 35px 20px;
+}
+.home__checking .datepicker-toggle {
+  display: inline-block;
+  position: relative;
+  width: 18px;
+  height: 19px;
+}
+.home__checking .datepicker-toggle-button {
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/icons/calendarColor.webp");
+  background-size: 15px;
+  background-repeat: no-repeat;
+}
+.home__checking .datepicker-input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.home__checking .datepicker-input::-webkit-calendar-picker-indicator {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.home__checking .division {
+  height: 2px;
+  background-color: #BEAD8E;
+  margin-top: 9px;
+  margin-bottom: 30px;
+}
+.home__checking label {
+  font-weight: 700;
+  line-height: 19px;
+  color: white;
+  display: block;
+  margin-bottom: 15px;
+}
+.home__checking input[type=text] {
+  background-color: inherit;
+  color: #686868;
+  outline: none;
+  border: none;
+  margin-left: 22px;
+  font-size: 14px;
+  line-height: 16px;
+}
+.home__checking button {
+  background-color: #BEAD8E;
+  color: #FFF;
+  line-height: 15px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  cursor: pointer;
+  border: none;
+  width: 250px;
+  height: 60px;
+  border-radius: 0;
+  appearance: none;
+  text-transform: uppercase;
 }
 
 html, * {
