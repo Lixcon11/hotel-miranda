@@ -1,9 +1,29 @@
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Old Standard TT";
+    @include styledHeaders;
+}
+
+h2 {
+    color: $white;
+}
+
+h4 {
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -0.9px;
 }
 
 p, label {
     font-family: Roboto;
+    color: $grey;
+    font-size: 14px;
+    line-height: 24px;
+    &.preface {
+        @include styledParagraph;
+
+        &--white {
+            color: $white;
+        }
+    }
 }
 
 button, span, input, input::placeholder, a, li {
@@ -23,12 +43,59 @@ button, span, input, input::placeholder, a, li {
     width: 100%;
     padding: 80px 20px 100px;
 
-    p {
-        @include styledParagraph;
+    h2 {
+        margin-top: 20px;
+    }
+}
+
+.fact {
+    margin: auto;
+    width: 270px;
+    text-align: center;
+
+    &--dark{
+        background-color: $dark-black;
+        
+        p, h4 {
+            color: $white !important;
+        }
+
+        .shadow {
+            opacity: 0 !important;
+        }
     }
 
-    h2 {
-        @include styledHeaders;
-        margin-top: 20px;
+    img {
+        width: 270px;
+        height: 300px;
+        object-fit: cover;
+    }
+
+    div {
+        margin-top: 35px;
+        position: relative;
+        
+        .shadow {
+            position: absolute;
+            height: 140px;
+            width: 140px;
+            right: 0;
+            opacity: 0.1;
+        }
+
+        .icon {
+            height: 70px;
+            width: 70px;
+            opacity: 1;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-top: 20px;
+            padding-bottom: 38px;
+            display: inline-block;
+            width: 200px;
+            color: $darker-black;
+        }
     }
 }
