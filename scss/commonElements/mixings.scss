@@ -36,6 +36,30 @@
   color: $theme;
 }
 
+@mixin centeredSection() {
+  text-align: center;
+
+  h3 {
+      margin-bottom: 0px;
+  }
+}
+
+@mixin dark() {
+  background-color: $dark-black;
+  
+  p:nth-child(1) {
+      color: $pale-gold;
+  }
+
+  h3 {
+      color: $white;
+  }
+
+  p {
+      color: $pale-grey;
+  }
+}
+
 @mixin logo() {
   margin-top: 3px;
   

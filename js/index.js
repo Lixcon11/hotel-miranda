@@ -1,4 +1,4 @@
 import dropdown from "./functions/dropdownMenu.js";
-import { swiper } from "./functions/swiper.js";
-//includeHTML();
+import { swiperPickerRooms, swiperFeatures } from "./functions/swiper.js";
+
 dropdown();

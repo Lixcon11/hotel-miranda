@@ -35,24 +35,9 @@ p, label {
 
 section {
     padding: $standard-padding;
-    p:nth-child(1) {
+
+    > p:first-of-type {
         @include styledParagraph;
-    }
-
-    &.dark {
-        background-color: $dark-black;
-        
-        p:nth-child(1) {
-            color: $pale-gold;
-        }
-
-        h3 {
-            color: $white;
-        }
-
-        p {
-            color: $pale-grey;
-        }
     }
 
     h3 {
@@ -134,6 +119,41 @@ section:first-of-type {
             display: inline-block;
             width: 200px;
             color: $darker-black;
+        }
+    }
+}
+
+.features {
+    position: relative;
+    text-align: left;
+    div {
+        //max-width: 390px;
+        //width: 370px;
+        //height: 370px;
+
+        p:nth-child(1) {
+            position: absolute;
+            color: $dark-black;
+            font-family: Archivo;
+            font-weight: 700;
+            font-size: 120px;
+            line-height: 130px;
+            opacity: 0.04;
+            right: 0;
+        }
+
+        img {
+            margin-top: 80px;
+            width: 70px;
+            height: 70px;
+        }
+
+        h4 {
+            margin: 40px 0px;
+        }
+
+        p:not(:first-child){
+            width: 80%;
         }
     }
 }

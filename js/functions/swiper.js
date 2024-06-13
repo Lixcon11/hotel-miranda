@@ -1,4 +1,4 @@
-const swiper = new Swiper('#swiper-rooms', {
+const swiperPickerRooms = new Swiper('#swiper-rooms', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -18,4 +18,16 @@ const swiper = new Swiper('#swiper-rooms', {
     }
   });
 
-  export {swiper}
+  const swiperFeatures = new Swiper("#swiper-features", {
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true
+    },
+    effect: 'fade',
+    fadeEffect: {
+      crossFade: true
+    },
+  });
+
+  export {swiperPickerRooms, swiperFeatures}
