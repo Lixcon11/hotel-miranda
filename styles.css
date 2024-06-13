@@ -24,18 +24,6 @@ p, label {
   font-size: 14px;
   line-height: 24px;
 }
-p.preface, label.preface {
-  font-family: Archivo;
-  font-weight: 700;
-  font-size: 13px;
-  letter-spacing: 2.8px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #777;
-}
-p.preface--white, label.preface--white {
-  color: #FFF;
-}
 p.price, label.price {
   color: #BEAD8E;
   font-family: Archivo;
@@ -47,6 +35,34 @@ p.price span, label.price span {
   font-weight: 700;
   font-size: 13px;
   line-height: 43px;
+}
+
+section {
+  padding: 35px 20px;
+}
+section p:nth-child(1) {
+  font-family: Archivo;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2.8px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #777;
+}
+section.dark {
+  background-color: #222;
+}
+section.dark p:nth-child(1) {
+  color: #BEAD8E;
+}
+section.dark h3 {
+  color: #FFF;
+}
+section.dark p {
+  color: #C2C2C2;
+}
+section h3 {
+  margin: 30px 0px 20px;
 }
 
 button, span, input, input::placeholder, a, li {
@@ -61,12 +77,15 @@ button, span, input, input::placeholder, a, li {
   height: 70px;
 }
 
-.presentation {
+section:first-of-type {
   background-color: #333;
   width: 100%;
   padding: 80px 20px 100px;
 }
-.presentation h2 {
+section:first-of-type p:nth-child(1) {
+  color: #FFF;
+}
+section:first-of-type h2 {
   margin-top: 20px;
 }
 
@@ -114,12 +133,6 @@ button, span, input, input::placeholder, a, li {
   color: #111;
 }
 
-/*
-.swiper {
-    width: 600px;
-    height: 300px;
-}
-*/
 h1, h2, h3, h4, h5, h6 {
   font-family: "Old Standard TT";
   font-weight: 400;
@@ -146,18 +159,6 @@ p, label {
   font-size: 14px;
   line-height: 24px;
 }
-p.preface, label.preface {
-  font-family: Archivo;
-  font-weight: 700;
-  font-size: 13px;
-  letter-spacing: 2.8px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #777;
-}
-p.preface--white, label.preface--white {
-  color: #FFF;
-}
 p.price, label.price {
   color: #BEAD8E;
   font-family: Archivo;
@@ -169,6 +170,34 @@ p.price span, label.price span {
   font-weight: 700;
   font-size: 13px;
   line-height: 43px;
+}
+
+section {
+  padding: 35px 20px;
+}
+section p:nth-child(1) {
+  font-family: Archivo;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2.8px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #777;
+}
+section.dark {
+  background-color: #222;
+}
+section.dark p:nth-child(1) {
+  color: #BEAD8E;
+}
+section.dark h3 {
+  color: #FFF;
+}
+section.dark p {
+  color: #C2C2C2;
+}
+section h3 {
+  margin: 30px 0px 20px;
 }
 
 button, span, input, input::placeholder, a, li {
@@ -183,12 +212,15 @@ button, span, input, input::placeholder, a, li {
   height: 70px;
 }
 
-.presentation {
+section:first-of-type {
   background-color: #333;
   width: 100%;
   padding: 80px 20px 100px;
 }
-.presentation h2 {
+section:first-of-type p:nth-child(1) {
+  color: #FFF;
+}
+section:first-of-type h2 {
   margin-top: 20px;
 }
 
@@ -236,12 +268,6 @@ button, span, input, input::placeholder, a, li {
   color: #111;
 }
 
-/*
-.swiper {
-    width: 600px;
-    height: 300px;
-}
-*/
 header {
   position: fixed;
   width: 100%;
@@ -347,18 +373,6 @@ p, label {
   font-size: 14px;
   line-height: 24px;
 }
-p.preface, label.preface {
-  font-family: Archivo;
-  font-weight: 700;
-  font-size: 13px;
-  letter-spacing: 2.8px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #777;
-}
-p.preface--white, label.preface--white {
-  color: #FFF;
-}
 p.price, label.price {
   color: #BEAD8E;
   font-family: Archivo;
@@ -370,6 +384,34 @@ p.price span, label.price span {
   font-weight: 700;
   font-size: 13px;
   line-height: 43px;
+}
+
+section {
+  padding: 35px 20px;
+}
+section p:nth-child(1) {
+  font-family: Archivo;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2.8px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #777;
+}
+section.dark {
+  background-color: #222;
+}
+section.dark p:nth-child(1) {
+  color: #BEAD8E;
+}
+section.dark h3 {
+  color: #FFF;
+}
+section.dark p {
+  color: #C2C2C2;
+}
+section h3 {
+  margin: 30px 0px 20px;
 }
 
 button, span, input, input::placeholder, a, li {
@@ -384,12 +426,15 @@ button, span, input, input::placeholder, a, li {
   height: 70px;
 }
 
-.presentation {
+section:first-of-type {
   background-color: #333;
   width: 100%;
   padding: 80px 20px 100px;
 }
-.presentation h2 {
+section:first-of-type p:nth-child(1) {
+  color: #FFF;
+}
+section:first-of-type h2 {
   margin-top: 20px;
 }
 
@@ -437,16 +482,10 @@ button, span, input, input::placeholder, a, li {
   color: #111;
 }
 
-/*
-.swiper {
-    width: 600px;
-    height: 300px;
-}
-*/
-.home .presentation__buttons {
+.home__presentation div {
   margin-top: 50px;
 }
-.home .presentation__buttons button {
+.home__presentation div button {
   background-color: #BEAD8E;
   color: #FFF;
   line-height: 15px;
@@ -462,13 +501,9 @@ button, span, input, input::placeholder, a, li {
   text-transform: uppercase;
   margin: 15px 0px;
 }
-.home .presentation__buttons button.subtle {
+.home__presentation div button.subtle {
   background-color: inherit;
   border: 2px solid #FFF;
-}
-.home__checking {
-  background-color: #222;
-  padding: 35px 20px;
 }
 .home__checking .datepicker-toggle {
   display: inline-block;
@@ -544,12 +579,11 @@ button, span, input, input::placeholder, a, li {
   text-transform: uppercase;
 }
 .home__about {
-  padding: 35px 20px;
   margin-top: 60px;
   position: relative;
 }
 .home__about .background {
-  background-color: #F8F8F8;
+  background-color: #F9F9F9;
   position: absolute;
   z-index: -1;
   top: 0;
@@ -573,21 +607,19 @@ button, span, input, input::placeholder, a, li {
   text-transform: uppercase;
   margin: 30px 0px;
 }
-.home__about h3 {
-  margin: 30px 0px 20px;
-}
 .home__pick-room {
   text-align: center;
-  margin-top: 30px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .home__pick-room h3 {
-  margin-top: 20px;
+  margin-bottom: 0px;
 }
 .home__pick-room .attributes {
   background-color: #FFF;
   margin: 0px auto;
   max-width: 310px;
-  width: 60%;
+  width: 68%;
   height: 40px;
   display: flex;
   justify-content: space-evenly;
@@ -597,8 +629,8 @@ button, span, input, input::placeholder, a, li {
   z-index: 2;
 }
 .home__pick-room .attributes img {
-  width: 16px;
-  height: 16px;
+  width: 13px;
+  height: 13px;
   cursor: pointer;
 }
 .home__pick-room .attributes img:nth-child(1) {
@@ -624,14 +656,13 @@ button, span, input, input::placeholder, a, li {
 }
 .home__pick-room #swiper-rooms {
   width: 100%;
-  height: 420px;
 }
 .home__pick-room #swiper-rooms .square-button {
   color: #111;
   --swiper-navigation-size: 9px;
   padding: 16px;
   background-color: white;
-  transform: translateY(-320%);
+  transform: translateY(-380%);
 }
 .home__pick-room #swiper-rooms .square-button:hover {
   background-color: #BEAD8E;
@@ -639,7 +670,8 @@ button, span, input, input::placeholder, a, li {
 }
 .home__pick-room #swiper-rooms img {
   height: 244px;
-  width: 335px;
+  width: 90%;
+  max-width: 335px;
 }
 .home__pick-room #swiper-rooms .description {
   background-color: #FFF;
@@ -654,6 +686,26 @@ button, span, input, input::placeholder, a, li {
 }
 .home__pick-room #swiper-rooms .description div h4 {
   margin-bottom: 15px;
+}
+.home__video {
+  padding-top: 65px;
+}
+.home__video button {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  background-color: #BEAD8E;
+  color: #FFF;
+  line-height: 15px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 2.8px;
+  cursor: pointer;
+  border: none;
+  width: 216px;
+  height: 60px;
+  border-radius: 0;
+  appearance: none;
+  text-transform: uppercase;
 }
 
 html, * {

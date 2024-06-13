@@ -17,13 +17,6 @@ p, label {
     color: $grey;
     font-size: 14px;
     line-height: 24px;
-    &.preface {
-        @include styledParagraph;
-
-        &--white {
-            color: $white;
-        }
-    }
 
     &.price {
         color: $pale-gold;
@@ -40,6 +33,33 @@ p, label {
     }
 }
 
+section {
+    padding: $standard-padding;
+    p:nth-child(1) {
+        @include styledParagraph;
+    }
+
+    &.dark {
+        background-color: $dark-black;
+        
+        p:nth-child(1) {
+            color: $pale-gold;
+        }
+
+        h3 {
+            color: $white;
+        }
+
+        p {
+            color: $pale-grey;
+        }
+    }
+
+    h3 {
+        margin: 30px 0px 20px;
+    }
+}
+
 button, span, input, input::placeholder, a, li {
     font-family: Archivo;
 }
@@ -52,10 +72,14 @@ button, span, input, input::placeholder, a, li {
     height: 70px;
 }
 
-.presentation {
+section:first-of-type {
     background-color: $light-black;
     width: 100%;
     padding: 80px 20px 100px;
+
+    p:nth-child(1) {
+        color: $white;
+    }
 
     h2 {
         margin-top: 20px;
@@ -113,9 +137,3 @@ button, span, input, input::placeholder, a, li {
         }
     }
 }
-/*
-.swiper {
-    width: 600px;
-    height: 300px;
-}
-*/
