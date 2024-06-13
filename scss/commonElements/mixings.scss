@@ -14,53 +14,90 @@
     border-radius: 0;
     appearance: none;
     text-transform: uppercase;
-  }
+}
 
-  @mixin styledParagraph($theme: $grey) {
-    font-family: Archivo;
+@mixin styledParagraph($theme: $grey) {
+  font-family: Archivo;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2.8px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $theme;
+}
+
+@mixin styledHeaders($theme: $darker-black) {
+  font-family: "Old Standard TT";
+  font-weight: 400;
+  font-size: 56px;
+  letter-spacing: -1.2px;
+  line-height: 60px;
+  text-transform: capitalize;
+  color: $theme;
+}
+
+@mixin logo() {
+  margin-top: 3px;
+  
+  .letter {
+    display: inline-block;
+    padding: 10px;
+    background-color: white;
     font-weight: 700;
-    font-size: 13px;
-    letter-spacing: 2.8px;
-    line-height: 18px;
+    font-size: 17px;
+    box-shadow: 0px 14px 24px 0px #8B8B8B40;
+    transform: translateY(-17%);
+  }
+
+  .name {
+    margin-left: 3px;
+    display: inline-block;
     text-transform: uppercase;
-    color: $theme;
-  }
+    width: 50px;
 
-  @mixin styledHeaders($theme: $darker-black) {
-    font-family: "Old Standard TT";
-    font-weight: 400;
-    font-size: 56px;
-    letter-spacing: -1.2px;
-    line-height: 60px;
-    text-transform: capitalize;
-    color: $theme;
-  }
-
-  @mixin logo() {
-    margin-top: 3px;
-    
-    .letter {
-      display: inline-block;
-      padding: 10px;
-      background-color: white;
-      font-weight: 700;
-      font-size: 17px;
-      box-shadow: 0px 14px 24px 0px #8B8B8B40;
-      transform: translateY(-17%);
+    span {
+        display: block;
     }
 
-    .name {
-      margin-left: 3px;
-      display: inline-block;
-      text-transform: uppercase;
-      width: 50px;
-
-      span {
-          display: block;
-      }
-
-      span:nth-child(1) {
-          font-weight: 700;
-      }
+    span:nth-child(1) {
+        font-weight: 700;
     }
   }
+}
+
+@mixin filters($size: 16px) {
+
+  img {
+    width: $size;
+    height: $size;
+    cursor: pointer;
+  }
+  
+  img:nth-child(1) {
+    content: url("../../assets/icons/filter/bed.webp");
+  }
+
+  img:nth-child(2) {
+    content: url("../../assets/icons/filter/wifi.webp");
+  }
+
+  img:nth-child(3) {
+    content: url("../../assets/icons/filter/car.webp");
+  }
+
+  img:nth-child(4) {
+    content: url("../../assets/icons/filter/snowflake.webp");
+  }
+
+  img:nth-child(5) {
+    content: url("../../assets/icons/filter/weight.webp");
+  }
+
+  img:nth-child(6) {
+    content: url("../../assets/icons/filter/no-smoking.webp");
+  }
+
+  img:nth-child(7) {
+    content: url("../../assets/icons/filter/drink.webp");
+  }
+}

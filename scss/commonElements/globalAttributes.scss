@@ -24,6 +24,20 @@ p, label {
             color: $white;
         }
     }
+
+    &.price {
+        color: $pale-gold;
+        font-family: Archivo;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 43px;
+
+        span {
+            font-weight: 700;
+            font-size: 13px;
+            line-height: 43px;
+        }
+    }
 }
 
 button, span, input, input::placeholder, a, li {
@@ -99,3 +113,9 @@ button, span, input, input::placeholder, a, li {
         }
     }
 }
+/*
+.swiper {
+    width: 600px;
+    height: 300px;
+}
+*/

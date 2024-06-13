@@ -36,6 +36,18 @@ p.preface, label.preface {
 p.preface--white, label.preface--white {
   color: #FFF;
 }
+p.price, label.price {
+  color: #BEAD8E;
+  font-family: Archivo;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 43px;
+}
+p.price span, label.price span {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 43px;
+}
 
 button, span, input, input::placeholder, a, li {
   font-family: Archivo;
@@ -102,6 +114,12 @@ button, span, input, input::placeholder, a, li {
   color: #111;
 }
 
+/*
+.swiper {
+    width: 600px;
+    height: 300px;
+}
+*/
 h1, h2, h3, h4, h5, h6 {
   font-family: "Old Standard TT";
   font-weight: 400;
@@ -140,6 +158,18 @@ p.preface, label.preface {
 p.preface--white, label.preface--white {
   color: #FFF;
 }
+p.price, label.price {
+  color: #BEAD8E;
+  font-family: Archivo;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 43px;
+}
+p.price span, label.price span {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 43px;
+}
 
 button, span, input, input::placeholder, a, li {
   font-family: Archivo;
@@ -206,6 +236,12 @@ button, span, input, input::placeholder, a, li {
   color: #111;
 }
 
+/*
+.swiper {
+    width: 600px;
+    height: 300px;
+}
+*/
 header {
   position: fixed;
   width: 100%;
@@ -323,6 +359,18 @@ p.preface, label.preface {
 p.preface--white, label.preface--white {
   color: #FFF;
 }
+p.price, label.price {
+  color: #BEAD8E;
+  font-family: Archivo;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 43px;
+}
+p.price span, label.price span {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 43px;
+}
 
 button, span, input, input::placeholder, a, li {
   font-family: Archivo;
@@ -389,6 +437,12 @@ button, span, input, input::placeholder, a, li {
   color: #111;
 }
 
+/*
+.swiper {
+    width: 600px;
+    height: 300px;
+}
+*/
 .home .presentation__buttons {
   margin-top: 50px;
 }
@@ -521,6 +575,85 @@ button, span, input, input::placeholder, a, li {
 }
 .home__about h3 {
   margin: 30px 0px 20px;
+}
+.home__pick-room {
+  text-align: center;
+  margin-top: 30px;
+}
+.home__pick-room h3 {
+  margin-top: 20px;
+}
+.home__pick-room .attributes {
+  background-color: #FFF;
+  margin: 0px auto;
+  max-width: 310px;
+  width: 60%;
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  transform: translateY(15px);
+  z-index: 2;
+}
+.home__pick-room .attributes img {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+.home__pick-room .attributes img:nth-child(1) {
+  content: url("../../assets/icons/filter/bed.webp");
+}
+.home__pick-room .attributes img:nth-child(2) {
+  content: url("../../assets/icons/filter/wifi.webp");
+}
+.home__pick-room .attributes img:nth-child(3) {
+  content: url("../../assets/icons/filter/car.webp");
+}
+.home__pick-room .attributes img:nth-child(4) {
+  content: url("../../assets/icons/filter/snowflake.webp");
+}
+.home__pick-room .attributes img:nth-child(5) {
+  content: url("../../assets/icons/filter/weight.webp");
+}
+.home__pick-room .attributes img:nth-child(6) {
+  content: url("../../assets/icons/filter/no-smoking.webp");
+}
+.home__pick-room .attributes img:nth-child(7) {
+  content: url("../../assets/icons/filter/drink.webp");
+}
+.home__pick-room #swiper-rooms {
+  width: 100%;
+  height: 420px;
+}
+.home__pick-room #swiper-rooms .square-button {
+  color: #111;
+  --swiper-navigation-size: 9px;
+  padding: 16px;
+  background-color: white;
+  transform: translateY(-320%);
+}
+.home__pick-room #swiper-rooms .square-button:hover {
+  background-color: #BEAD8E;
+  color: white;
+}
+.home__pick-room #swiper-rooms img {
+  height: 244px;
+  width: 335px;
+}
+.home__pick-room #swiper-rooms .description {
+  background-color: #FFF;
+  width: 300px;
+  height: 215px;
+  margin: auto;
+  padding: 20px 25px;
+  transform: translateY(-20px);
+}
+.home__pick-room #swiper-rooms .description div {
+  margin-bottom: 10px;
+}
+.home__pick-room #swiper-rooms .description div h4 {
+  margin-bottom: 15px;
 }
 
 html, * {
