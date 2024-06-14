@@ -1,208 +1,181 @@
 @import "./commonElements/commons.scss";
 
-.home {
+.presentation>div {
+    margin-top: 50px;
+}
+
+.checking {
+
+    .datepicker-toggle {
+        display: inline-block;
+        position: relative;
+        width: 18px;
+        height: 19px;
+    }
+
+    .datepicker-toggle-button {
+        position: absolute;
+        left: 0;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background-image: url("../assets/icons/calendarColor.webp");
+        background-size: 15px;
+        background-repeat: no-repeat;
+    }
+
+    .datepicker-input {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        cursor: pointer;
+        box-sizing: border-box;
+    }
+
+    .datepicker-input::-webkit-calendar-picker-indicator {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .division {
+        height: 2px;
+        background-color: $pale-gold;
+        margin-top: 9px;
+        margin-bottom: 30px;
+    }
+
+    label {
+        font-weight: 700;
+        line-height: 19px;
+        color: white;
+        display: block;
+        margin-bottom: 15px;
+    }
     
-    &__presentation div {
-        margin-top: 50px;
+    input[type="text"] {
+        background-color: inherit;
+        color: $dark-grey;
+        outline: none;
+        border: none;
+        margin-left: 22px;
+        font-size: 14px;
+        line-height: 16px;
+    }
 
-        button {
-            @include styledButton;
-            margin: 15px 0px;
+    button {
+        width:250px;
+    }
+}
 
-            &.subtle {
-                background-color: inherit;
-                border: 2px solid $white;
+.about {
+    margin-top: 30px;
+    position: relative;
+
+    >article>p:first-of-type {
+        @include styledBigText;
+        margin: 30px 0px 20px;
+    }
+    
+    .background {
+        background-color: $light-grey;
+        position: absolute;
+        z-index: -1;
+        top:20px;
+        left: 0;
+        width: 100%;
+        height: 640px;
+    }
+    
+    button {
+        margin: 30px 0px;
+    }
+}
+
+.pick-room {
+    padding-left: 0px;
+    padding-right: 0px;
+
+    .filters {
+        position: relative;
+        transform: translateY(15px);
+        z-index: 2;
+    }
+
+    #swiper-rooms {
+        width: 100%;
+        overflow: hidden;
+
+        .square-button {
+            color: $darker-black;
+            --swiper-navigation-size: 9px;
+            padding: 16px;
+            background-color: white;
+            transform: translateY(-380%);
+
+            &:hover {
+                background-color: $pale-gold;
+                color: white;
             }
         }
-    }
 
-    &__checking {
-        @include dark;
-
-        .datepicker-toggle {
-            display: inline-block;
-            position: relative;
-            width: 18px;
-            height: 19px;
+        img {
+            height: 244px;
+            width: 90%;
+            max-width: 335px;
         }
 
-        .datepicker-toggle-button {
-            position: absolute;
-            left: 0;
-            top: 0px;
-            width: 100%;
-            height: 100%;
-            background-image: url("../assets/icons/calendarColor.webp");
-            background-size: 15px;
-            background-repeat: no-repeat;
-        }
-
-        .datepicker-input {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            cursor: pointer;
-            box-sizing: border-box;
-        }
-
-        .datepicker-input::-webkit-calendar-picker-indicator {
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            cursor: pointer;
-        }
-
-        .division {
-            height: 2px;
-            background-color: $pale-gold;
-            margin-top: 9px;
-            margin-bottom: 30px;
-        }
-
-        label {
-            font-weight: 700;
-            line-height: 19px;
-            color: white;
-            display: block;
-            margin-bottom: 15px;
-        }
-        
-        input[type="text"] {
-            background-color: inherit;
-            color: $dark-grey;
-            outline: none;
-            border: none;
-            margin-left: 22px;
-            font-size: 14px;
-            line-height: 16px;
-        }
-
-        button {
-            @include styledButton($width:250px);
-        }
-    }
-
-    &__about {
-        margin-top: 30px;
-        position: relative;
-        
-        .background {
-            background-color: $light-grey;
-            position: absolute;
-            z-index: -1;
-            top:20px;
-            left: 0;
-            width: 100%;
-            height: 640px;
-        }
-        
-        button {
-            @include styledButton;
-            margin: 30px 0px;
-        }
-    }
-
-    &__pick-room {
-        @include centeredSection;
-        padding-left: 0px;
-        padding-right: 0px;
-
-        .attributes {
+        .description {
             background-color: $white;
-            margin: 0px auto;
-            max-width: 310px;
-            width: 68%;
-            height: 40px;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-            @include filters;
-            position: relative;
-            transform: translateY(15px);
-            z-index: 2;
-        }
+            width: 300px;
+            height: 215px;
+            margin: auto;
+            padding: 20px 25px;
+            transform: translateY(-20px);
 
-        #swiper-rooms {
-            width: 100%;
-            overflow: hidden;
+            div {
+                margin-bottom: 10px;
 
-            .square-button {
-                color: $darker-black;
-                --swiper-navigation-size: 9px;
-                padding: 16px;
-                background-color: white;
-                transform: translateY(-380%);
-
-                &:hover {
-                    background-color: $pale-gold;
-                    color: white;
-                }
-            }
-
-            img {
-                height: 244px;
-                width: 90%;
-                max-width: 335px;
-            }
-
-            .description {
-                background-color: $white;
-                width: 300px;
-                height: 215px;
-                margin: auto;
-                padding: 20px 25px;
-                transform: translateY(-20px);
-
-                div {
-                    margin-bottom: 10px;
-
-                    h4 {
-                        margin-bottom: 15px;
-                    }
+                h4 {
+                    margin-bottom: 15px;
                 }
             }
         }
-
     }
 
-    &__video {
-        @include dark;
-        button {
-            margin-top: 25px;
-            margin-bottom: 10px;
-            @include styledButton;
-        }
+}
+
+.video {
+}
+
+.facilities {
+    
+    #swiper-features {
+        max-width: 370px;
+        height: 410px;
+        overflow: hidden;
+        --swiper-theme-color: #BEAD8E;
     }
+}
 
-    &__facilities {
-        @include centeredSection;
-        
-        #swiper-features {
-            max-width: 370px;
-            height: 410px;
-            overflow: hidden;
-            --swiper-theme-color: #BEAD8E;
-        }
-    }
+.menu {
+    margin-top: 50px;
+    padding-top: 100px;
+    position: relative;
 
-    &__menu {
-        margin-top: 50px;
-        padding-top: 100px;
-        position: relative;
-
-        > img {
-            position: absolute;
-            top:0;
-            right: 0;
-            width: 115px;
-            height: 115px;
-        }
+    > img {
+        position: absolute;
+        top:0;
+        right: 0;
+        width: 115px;
+        height: 115px;
     }
 }

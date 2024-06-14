@@ -14,12 +14,11 @@ header {
         box-shadow: 0px 3px 6px 0px #0000004A;
 
 
-        &__logo {
+        .logo {
             position: absolute;
             top: 50%;
             left: 65px;
             transform: translateY(-50%);
-            @include logo;
 
             .letter {
                 cursor: pointer;
@@ -50,7 +49,7 @@ header {
             }
         }
 
-        &__icons {
+        &__ui {
             position: absolute;
             top: 50%;
             right: 10px;
@@ -58,9 +57,6 @@ header {
         }
 
         img {
-            color: white;
-            width: 19px;
-            height: 19px;
             margin: 0px 8px;
             cursor: pointer;
         }

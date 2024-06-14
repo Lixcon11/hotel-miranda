@@ -1,9 +1,5 @@
-h1, h2, h3, h4, h5, h6 {
-    @include styledHeaders;
-}
-
-h2 {
-    color: $white;
+h1, h2, h4, h5, h6 {
+    @include styledBigText;
 }
 
 h4 {
@@ -13,14 +9,14 @@ h4 {
 }
 
 p, label {
-    font-family: Roboto;
+    font-family: $forPlainText;
     color: $grey;
     font-size: 14px;
     line-height: 24px;
 
     &.price {
         color: $pale-gold;
-        font-family: Archivo;
+        font-family: $forNiceText;
         font-weight: 700;
         font-size: 32px;
         line-height: 43px;
@@ -34,27 +30,51 @@ p, label {
 }
 
 section {
-    padding: $standard-padding;
+    padding: 55px 20px 20px;
 
     > p:first-of-type {
-        @include styledParagraph;
+        @include styledBigText;
+        margin: 30px 0px 20px;
     }
 
     h3 {
+        @include styledNiceText;
         margin: 30px 0px 20px;
+    }
+
+    &.dark {
+        background-color: $dark-black;
+        
+        > p:first-of-type {
+          color: $white;
+        }
+      
+        h3 {
+          color: $pale-gold;
+        }
+      
+        p {
+          color: $pale-grey;
+        }
+    }
+
+    &.centered {
+        text-align: center;
+
+        p {
+          margin-bottom: 0px;
+        }
     }
 }
 
 button, span, input, input::placeholder, a, li {
-    font-family: Archivo;
+    font-family: $forNiceText;
 }
 
-.none {
-    display: none;
-}
-
-.filler {
-    height: 70px;
+main {
+    >div:first-of-type {
+        height: 70px;
+    }
 }
 
 section:first-of-type {
@@ -63,11 +83,62 @@ section:first-of-type {
     padding: 80px 20px 100px;
 
     p:nth-child(1) {
+        @include styledNiceText;
         color: $white;
     }
 
     h2 {
+        color: $white;
         margin-top: 20px;
+    }
+}
+
+.none {
+    display: none;
+}
+
+.styledButton {
+    background-color: $pale-gold;
+    color: $white;
+    line-height: 15px;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 2.8px;
+    cursor: pointer;
+    border: none;
+    width: 216px;
+    height: 60px;
+    border-radius: 2px solid inherit;
+    appearance: none;
+    text-transform: uppercase;
+    margin: 15px 0px;
+
+    &--subtle {
+        background-color: inherit;
+        border: 2px solid $white;
+    }
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+
+    &.icon {
+        height: 70px;
+        width: 70px;
+
+        &--smallest {
+            height: 13px;
+            width: 13px;
+        }
+
+        &--small {
+            width: 19px;
+        }
+
+        &--larger {
+
+        }
     }
 }
 
@@ -79,19 +150,19 @@ section:first-of-type {
     &--dark{
         background-color: $dark-black;
         
-        p, h4 {
-            color: $white !important;
-        }
-
-        .shadow {
-            opacity: 0 !important;
+        div {
+            p:first-of-type, h4 {
+                color: $white;
+            }
+    
+            img.shadow {
+                opacity: 0;
+            }
         }
     }
-
-    img {
-        width: 270px;
+    
+    img:not(.icon) {
         height: 300px;
-        object-fit: cover;
     }
 
     div {
@@ -107,9 +178,6 @@ section:first-of-type {
         }
 
         .icon {
-            height: 70px;
-            width: 70px;
-            opacity: 1;
             margin-bottom: 20px;
         }
 
@@ -144,8 +212,6 @@ section:first-of-type {
 
         img {
             margin-top: 80px;
-            width: 70px;
-            height: 70px;
         }
 
         h4 {
@@ -155,5 +221,77 @@ section:first-of-type {
         p:not(:first-child){
             width: 80%;
         }
+    }
+}
+
+.logo {
+    margin-top: 3px;
+    
+    .letter {
+      display: inline-block;
+      padding: 10px;
+      background-color: white;
+      font-weight: 700;
+      font-size: 17px;
+      box-shadow: 0px 14px 24px 0px #8B8B8B40;
+      transform: translateY(-17%);
+    }
+  
+    .name {
+      margin-left: 3px;
+      display: inline-block;
+      text-transform: uppercase;
+      width: 50px;
+  
+      span {
+          display: block;
+      }
+  
+      span:nth-child(1) {
+          font-weight: 700;
+      }
+    }
+}
+
+.filters {
+    background-color: $white;
+    margin: 0px auto;
+    max-width: 310px;
+    width: 68%;
+    height: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    img {
+      cursor: pointer;
+    }
+    
+    img:nth-child(1) {
+      content: url("../../assets/icons/filter/bed.webp");
+    }
+  
+    img:nth-child(2) {
+      content: url("../../assets/icons/filter/wifi.webp");
+    }
+  
+    img:nth-child(3) {
+      content: url("../../assets/icons/filter/car.webp");
+    }
+  
+    img:nth-child(4) {
+      content: url("../../assets/icons/filter/snowflake.webp");
+    }
+  
+    img:nth-child(5) {
+      content: url("../../assets/icons/filter/weight.webp");
+    }
+  
+    img:nth-child(6) {
+      content: url("../../assets/icons/filter/no-smoking.webp");
+    }
+  
+    img:nth-child(7) {
+      content: url("../../assets/icons/filter/drink.webp");
     }
 }
