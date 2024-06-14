@@ -21,10 +21,10 @@
     <header>
         <div class="container">
             <div class="container__menu">
-                <img id="menu" src="./assets/icons/menu.webp"/>
-                <img class="none" id="cross" src="./assets/icons/close.webp"/>
+                <img class="icon icon--small" id="menu" src="./assets/icons/menu.webp"/>
+                <img class="icon icon--small none" id="cross" src="./assets/icons/close.webp"/>
             </div>
-            <div class="container__logo">
+            <div class="logo">
                 <span class="letter">H</span>
                 <div class="name">
                     <span>Hotel</span>
@@ -37,23 +37,23 @@
                 <a>Offers</a>
                 <a>Contanct</a>
             </nav>
-            <diV class="container__icons">
-                <img src="./assets/icons/user.webp"/>
-                <img src="./assets/icons/loupe.webp"/>
+            <diV class="container__ui">
+                <img class="icon icon--small" src="./assets/icons/user.webp"/>
+                <img class="icon icon--small" src="./assets/icons/loupe.webp"/>
             </diV>
         </div>
     </header>
-    <main class="home">
-        <div class="filler"></div>
-        <section class="home__presentation">
+    <main>
+        <div></div>
+        <section class="presentation">
             <p>The ultimate luxury</p>
             <h2>The perfect base for you</h2>
             <div>
-                <button>Take a tour</button>
-                <button class="subtle">Learn more</button>
+                <button class="styledButton">Take a tour</button>
+                <button class="styledButton styledButton--subtle">Learn more</button>
             </div>
         </section>
-        <section class="home__checking">
+        <section class="checking dark">
             <form>
                 <label for="arrival">Arrival Date</label>
                 <span class="datepicker-toggle">
@@ -70,24 +70,24 @@
                 </span>
                 <div class="division"></div>
             </form>
-            <button>Check availability</button>
+            <button class="styledButton">Check availability</button>
         </section>
-        <section class="home__about">
+        <section class="about">
             <div class="background"></div>
             <article>
-                <p>About us</p>
-                <h3>Discover our underground</h3>
-                <p class="text">
+                <h3>About us</h3>
+                <p>Discover our underground</p>
+                <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
-                <button>Book now</button>
+                <button class="styledButton">Book now</button>
             </article>
             <article>
                 <div class="fact">
-                    <img src="./assets/images/teamwork.webp">
+                    <img src="/assets/images/teamwork.webp"></img>
                     <div>
-                        <img class="shadow" src="./assets/icons/teamwork.webp">
-                        <img class="icon" src="./assets/icons/teamwork.webp">
+                        <img class="shadow" src="/assets/icons/teamwork.webp">
+                        <img class="icon" src="/assets/icons/teamwork.webp">
                         <h4>Strong team</h4>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
@@ -107,17 +107,17 @@
                 </div>
             </article>
         </section>
-        <section class="home__pick-room">
-            <p>Rooms</p>
-            <h3>Hand picked rooms</h3>
-            <div class="attributes">
-                <img/>
-                <img/>
-                <img/>
-                <img/>
-                <img/>
-                <img/>
-                <img/>
+        <section class="pick-room centered">
+            <h3>Rooms</h3>
+            <p>Hand picked rooms</p>
+            <div class="filters">
+                <img class="icon icon--smallest"/>
+                <img class="icon icon--smallest"/>
+                <img class="icon icon--smallest"/>
+                <img class="icon icon--smallest"/>
+                <img class="icon icon--smallest"/>
+                <img class="icon icon--smallest"/>
+                <img class="icon icon--smallest"/>
             </div>
             <div class="swiper" id="swiper-rooms">
                 <div class="swiper-wrapper">
@@ -162,31 +162,31 @@
                 <div class="swiper-button-next square-button"></div>
             </div>
         </section>
-        <section class="home__video">
-            <p>Intro video</p>
-            <h3>Meet with our luxury place</h3>
+        <section class="video dark">
+            <h3>Intro video</h3>
+            <p>Meet with our luxury place</p>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat you have to understand this.
             </p>
             <video width="335" height="270" controls>
                 <source src="./assets/videos/video.mp4" type="video/mp4">
               </video> 
-            <button>Book now</button>
+            <button class="styledButton">Book now</button>
         </section>
-        <section class="home__facilities">
-            <p>Facilicies</p>
-            <h3>Core features</h3>
+        <section class="facilities centered">
+            <h3>Facilicies</h3>
+            <p>Core features</p>
             <article class="swiper features" id="swiper-features">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <p>01</p>
-                        <img src="./assets/icons/features/rating.webp">
+                        <img class="icon" src="./assets/icons/features/rating.webp">
                         <h4>Have high rating</h4>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..
                         </p>
                     </div>
-                    <div class="swiper-slide">
+                    <div class="icon" class="swiper-slide">
                         <p>02</p>
                         <img src="./assets/icons/features/clock.webp">
                         <h4>Quiet hours</h4>
@@ -196,7 +196,7 @@
                     </div>
                     <div class="swiper-slide">
                         <p>03</p>
-                        <img src="./assets/icons/features/location.webp">
+                        <img class="icon" src="./assets/icons/features/location.webp">
                         <h4>Best locations</h4>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..
@@ -204,7 +204,7 @@
                     </div>
                     <div class="swiper-slide">
                         <p>04</p>
-                        <img src="./assets/icons/features/cancelation.webp">
+                        <img class="icon" src="./assets/icons/features/cancelation.webp">
                         <h4>Free cancellation</h4>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..
@@ -212,7 +212,7 @@
                     </div>
                     <div class="swiper-slide">
                         <p>05</p>
-                        <img src="./assets/icons/features/creditCard.webp">
+                        <img class="icon" src="./assets/icons/features/creditCard.webp">
                         <h4>Payment options</h4>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..
@@ -220,7 +220,7 @@
                     </div>
                     <div class="swiper-slide">
                         <p>06</p>
-                        <img src="./assets/icons/features/badge.webp">
+                        <img class="icon" src="./assets/icons/features/badge.webp">
                         <h4>Special offers</h4>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna..
@@ -230,9 +230,9 @@
                 <div class="swiper-pagination"></div>
             </article>
         </section>
-        <section class="home__menu">
-            <p>menu</p>
-            <h3>Our foods menu</h3>
+        <section class="menu">
+            <h3>menu</h3>
+            <p>Our foods menu</p>
             <img src="./assets/icons/pizza.webp">
         </section>
     </main>
