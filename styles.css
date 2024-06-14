@@ -783,6 +783,18 @@ section:first-of-type h2 {
   overflow: hidden;
   --swiper-theme-color: #BEAD8E;
 }
+.home__menu {
+  margin-top: 50px;
+  padding-top: 100px;
+  position: relative;
+}
+.home__menu > img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 115px;
+  height: 115px;
+}
 
 html, * {
   box-sizing: border-box;

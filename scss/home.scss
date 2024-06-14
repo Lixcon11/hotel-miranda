@@ -191,4 +191,18 @@
             --swiper-theme-color: #BEAD8E;
         }
     }
+
+    &__menu {
+        margin-top: 50px;
+        padding-top: 100px;
+        position: relative;
+
+        > img {
+            position: absolute;
+            top:0;
+            right: 0;
+            width: 115px;
+            height: 115px;
+        }
+    }
 }
