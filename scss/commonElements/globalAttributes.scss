@@ -134,6 +134,7 @@ img {
 
         &--small {
             width: 19px;
+            height: 19px;
         }
 
         &--larger {
@@ -146,7 +147,7 @@ img {
     margin: auto;
     width: 270px;
     text-align: center;
-
+    
     &--dark{
         background-color: $dark-black;
         
@@ -266,9 +267,9 @@ img {
     img {
       cursor: pointer;
     }
-    
+    /*
     img:nth-child(1) {
-      content: url("../../assets/icons/filter/bed.webp");
+      content: url("./../../assets/icons/filter/bed.webp");
     }
   
     img:nth-child(2) {
@@ -294,4 +295,5 @@ img {
     img:nth-child(7) {
       content: url("../../assets/icons/filter/drink.webp");
     }
+    */
 }

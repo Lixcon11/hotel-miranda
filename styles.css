@@ -142,6 +142,7 @@ img.icon--smallest {
 }
 img.icon--small {
   width: 19px;
+  height: 19px;
 }
 .fact {
   margin: auto;
@@ -240,30 +241,38 @@ img.icon--small {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  /*
+  img:nth-child(1) {
+    content: url("./../../assets/icons/filter/bed.webp");
+  }
+
+  img:nth-child(2) {
+    content: url("../../assets/icons/filter/wifi.webp");
+  }
+
+  img:nth-child(3) {
+    content: url("../../assets/icons/filter/car.webp");
+  }
+
+  img:nth-child(4) {
+    content: url("../../assets/icons/filter/snowflake.webp");
+  }
+
+  img:nth-child(5) {
+    content: url("../../assets/icons/filter/weight.webp");
+  }
+
+  img:nth-child(6) {
+    content: url("../../assets/icons/filter/no-smoking.webp");
+  }
+
+  img:nth-child(7) {
+    content: url("../../assets/icons/filter/drink.webp");
+  }
+  */
 }
 .filters img {
   cursor: pointer;
-}
-.filters img:nth-child(1) {
-  content: url("../../assets/icons/filter/bed.webp");
-}
-.filters img:nth-child(2) {
-  content: url("../../assets/icons/filter/wifi.webp");
-}
-.filters img:nth-child(3) {
-  content: url("../../assets/icons/filter/car.webp");
-}
-.filters img:nth-child(4) {
-  content: url("../../assets/icons/filter/snowflake.webp");
-}
-.filters img:nth-child(5) {
-  content: url("../../assets/icons/filter/weight.webp");
-}
-.filters img:nth-child(6) {
-  content: url("../../assets/icons/filter/no-smoking.webp");
-}
-.filters img:nth-child(7) {
-  content: url("../../assets/icons/filter/drink.webp");
 }
 
 h1, h2, h4, h5, h6 {
@@ -410,6 +419,7 @@ img.icon--smallest {
 }
 img.icon--small {
   width: 19px;
+  height: 19px;
 }
 .fact {
   margin: auto;
@@ -508,30 +518,38 @@ img.icon--small {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  /*
+  img:nth-child(1) {
+    content: url("./../../assets/icons/filter/bed.webp");
+  }
+
+  img:nth-child(2) {
+    content: url("../../assets/icons/filter/wifi.webp");
+  }
+
+  img:nth-child(3) {
+    content: url("../../assets/icons/filter/car.webp");
+  }
+
+  img:nth-child(4) {
+    content: url("../../assets/icons/filter/snowflake.webp");
+  }
+
+  img:nth-child(5) {
+    content: url("../../assets/icons/filter/weight.webp");
+  }
+
+  img:nth-child(6) {
+    content: url("../../assets/icons/filter/no-smoking.webp");
+  }
+
+  img:nth-child(7) {
+    content: url("../../assets/icons/filter/drink.webp");
+  }
+  */
 }
 .filters img {
   cursor: pointer;
-}
-.filters img:nth-child(1) {
-  content: url("../../assets/icons/filter/bed.webp");
-}
-.filters img:nth-child(2) {
-  content: url("../../assets/icons/filter/wifi.webp");
-}
-.filters img:nth-child(3) {
-  content: url("../../assets/icons/filter/car.webp");
-}
-.filters img:nth-child(4) {
-  content: url("../../assets/icons/filter/snowflake.webp");
-}
-.filters img:nth-child(5) {
-  content: url("../../assets/icons/filter/weight.webp");
-}
-.filters img:nth-child(6) {
-  content: url("../../assets/icons/filter/no-smoking.webp");
-}
-.filters img:nth-child(7) {
-  content: url("../../assets/icons/filter/drink.webp");
 }
 
 header {
@@ -732,6 +750,7 @@ img.icon--smallest {
 }
 img.icon--small {
   width: 19px;
+  height: 19px;
 }
 .fact {
   margin: auto;
@@ -830,30 +849,38 @@ img.icon--small {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  /*
+  img:nth-child(1) {
+    content: url("./../../assets/icons/filter/bed.webp");
+  }
+
+  img:nth-child(2) {
+    content: url("../../assets/icons/filter/wifi.webp");
+  }
+
+  img:nth-child(3) {
+    content: url("../../assets/icons/filter/car.webp");
+  }
+
+  img:nth-child(4) {
+    content: url("../../assets/icons/filter/snowflake.webp");
+  }
+
+  img:nth-child(5) {
+    content: url("../../assets/icons/filter/weight.webp");
+  }
+
+  img:nth-child(6) {
+    content: url("../../assets/icons/filter/no-smoking.webp");
+  }
+
+  img:nth-child(7) {
+    content: url("../../assets/icons/filter/drink.webp");
+  }
+  */
 }
 .filters img {
   cursor: pointer;
-}
-.filters img:nth-child(1) {
-  content: url("../../assets/icons/filter/bed.webp");
-}
-.filters img:nth-child(2) {
-  content: url("../../assets/icons/filter/wifi.webp");
-}
-.filters img:nth-child(3) {
-  content: url("../../assets/icons/filter/car.webp");
-}
-.filters img:nth-child(4) {
-  content: url("../../assets/icons/filter/snowflake.webp");
-}
-.filters img:nth-child(5) {
-  content: url("../../assets/icons/filter/weight.webp");
-}
-.filters img:nth-child(6) {
-  content: url("../../assets/icons/filter/no-smoking.webp");
-}
-.filters img:nth-child(7) {
-  content: url("../../assets/icons/filter/drink.webp");
 }
 
 .presentation > div {
