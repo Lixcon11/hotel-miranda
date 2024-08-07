@@ -171,11 +171,66 @@
     padding-top: 100px;
     position: relative;
 
+    .swiper-button-next.swiper-button-disabled {
+        opacity: 1;
+    }
+
+    .swiper {
+        padding-bottom: 50px;
+    }
+
     > img {
         position: absolute;
         top:0;
         right: 0;
         width: 115px;
         height: 115px;
+    }
+
+    div .dish {
+        margin-bottom: 15px;
+    }
+
+    .dish {
+
+        display: flex;
+
+        img {
+            height: 120px;
+            width: 120px;
+        }
+
+        div {
+            margin-left: 25px;
+            h4 {
+                font-size: 24px;
+                line-height: 24px;
+                color: $dark-black;
+                margin-bottom: 15px;
+            }
+
+            p {
+                color: $dark-black;
+                font-weight: 400;
+            }
+
+        }
+    }
+
+    .square-button {
+        color: $darker-black;
+        --swiper-navigation-size: 9px;
+        padding: 16px;
+        background-color: white;
+        transform: translateY(600%);
+
+        &.swiper-button-prev {
+            transform: translate(850%, 600%);
+        }
+
+        &:hover {
+            background-color: $pale-gold;
+            color: white;
+        }
     }
 }

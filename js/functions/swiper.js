@@ -30,4 +30,14 @@ const swiperPickerRooms = new Swiper('#swiper-rooms', {
     },
   });
 
-  export {swiperPickerRooms, swiperFeatures}
+  const swiperDishes = new Swiper('#swiper-dishes', {
+    // Optional parameters
+    direction: 'horizontal',
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  });
+
+  export {swiperPickerRooms, swiperFeatures, swiperDishes}
