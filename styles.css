@@ -1031,12 +1031,13 @@ img.icon--small {
   margin-top: 50px;
   padding-top: 100px;
   position: relative;
+  --swiper-theme-color: #BEAD8E;
 }
 .menu .swiper-button-next.swiper-button-disabled {
   opacity: 1;
 }
 .menu .swiper {
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 .menu > img {
   position: absolute;

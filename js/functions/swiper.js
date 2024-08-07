@@ -16,28 +16,37 @@ const swiperPickerRooms = new Swiper('#swiper-rooms', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     }
-  });
+});
 
-  const swiperFeatures = new Swiper("#swiper-features", {
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    effect: 'fade',
-    fadeEffect: {
-      crossFade: true
-    },
-  });
+const swiperFeatures = new Swiper("#swiper-features", {
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true
+  },
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true
+  },
+});
 
-  const swiperDishes = new Swiper('#swiper-dishes', {
-    // Optional parameters
-    direction: 'horizontal',
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    }
-  });
+const swiperDishes = new Swiper('#swiper-dishes', {
+  // Optional parameters
+  direction: 'horizontal',
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  }
+});
 
-  export {swiperPickerRooms, swiperFeatures, swiperDishes}
+const swiperReaturants = new Swiper('#swiper-restaurants', {
+  direction: 'horizontal',
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'bullets',
+    clickable: true
+  }
+});
+
+export {swiperPickerRooms, swiperFeatures, swiperDishes, swiperReaturants}
