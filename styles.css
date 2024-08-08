@@ -1084,6 +1084,13 @@ img.icon--small {
   color: white;
 }
 
+.stats p {
+  display: inline;
+}
+.stats div p:nth-child(3) {
+  font-weight: 700;
+}
+
 html, * {
   box-sizing: border-box;
   margin: 0;

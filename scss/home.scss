@@ -235,3 +235,13 @@
         }
     }
 }
+
+.stats {
+    p {
+        display: inline;
+    }
+
+    div p:nth-child(3) {
+        font-weight: 700;
+    }
+}
