@@ -234,14 +234,39 @@
             color: white;
         }
     }
+
+    #swiper-restaurants img{
+        max-height: 370px;
+        max-width: 370px;
+    }
 }
 
 .stats {
-    p {
+
+    div {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    div p {
+        margin-top: 50px;
+        color: $light-grey;
         display: inline;
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 22px;
     }
 
-    div p:nth-child(3) {
+    div span{
+        font-size: 16px;
+    }
+
+    h4 {
+        font-family: $forPlainText;
+        font-size: 16px;
         font-weight: 700;
+        line-height: 22px;
+        color: $grey;
     }
 }
