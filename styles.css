@@ -1416,7 +1416,7 @@ footer {
 footer .first {
   padding: 0px 20px;
   position: relative;
-  height: 700px;
+  height: 725px;
 }
 footer .logo-container {
   padding-top: 200px;
@@ -1424,7 +1424,7 @@ footer .logo-container {
 }
 footer .first > img {
   position: absolute;
-  height: 700px;
+  height: 725px;
   right: 0;
 }
 footer .logo {
@@ -1477,6 +1477,7 @@ footer .last {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  letter-spacing: -0.48px;
 }
 footer .last p {
   color: #222;

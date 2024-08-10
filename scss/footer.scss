@@ -6,7 +6,7 @@ footer {
     .first {
         padding: 0px 20px;
         position: relative;
-        height: 700px;
+        height: 725px;
     }
 
     .logo-container {
@@ -16,7 +16,7 @@ footer {
 
     .first > img {
         position: absolute;
-        height: 700px;
+        height: 725px;
         right: 0;
     }
 
@@ -81,6 +81,7 @@ footer {
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        letter-spacing: -0.48px;
 
         p {
             color: $dark-black;
