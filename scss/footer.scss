@@ -74,7 +74,6 @@ footer {
     }
 
     .last {
-        margin: 0px 20px;
         height: 94px;
         background-color: $foot-grey;
         width: 100%;
@@ -84,6 +83,7 @@ footer {
         letter-spacing: -0.48px;
 
         p {
+            margin: 0px 20px;
             color: $dark-black;
             font-size: 16px;
             line-height: 19px;

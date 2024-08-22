@@ -119,6 +119,11 @@ section:first-of-type {
     }
 }
 
+a {
+    text-decoration: none;
+    color: $dark-black;
+}
+
 img {
     width: 100%;
     object-fit: cover;
