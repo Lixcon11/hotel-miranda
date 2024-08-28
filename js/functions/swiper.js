@@ -31,9 +31,7 @@ const swiperFeatures = new Swiper("#swiper-features", {
 });
 
 const swiperDishes = new Swiper('#swiper-dishes', {
-  // Optional parameters
   direction: 'horizontal',
-  // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -45,6 +43,18 @@ const swiperReaturants = new Swiper('#swiper-restaurants', {
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
+    clickable: true
+  }
+});
+
+const swiperRoomsList = new Swiper('#swiper-rooms-list', {
+  direction: 'horizontal'/*,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },*/,
+  pagination: {
+    el: '.swiper-pagination',
     clickable: true
   }
 });
