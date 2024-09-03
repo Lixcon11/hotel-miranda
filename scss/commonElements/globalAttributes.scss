@@ -53,7 +53,7 @@ section {
           color: $pale-gold;
         }
       
-        p {
+        p, h4 {
           color: $pale-grey;
         }
     }
@@ -202,9 +202,6 @@ img {
     position: relative;
     text-align: left;
     div {
-        //max-width: 390px;
-        //width: 370px;
-        //height: 370px;
         
         p:nth-child(1) {
             position: absolute;
@@ -273,33 +270,4 @@ img {
     img {
       cursor: pointer;
     }
-    /*
-    img:nth-child(1) {
-      content: url("./../../assets/icons/filter/bed.webp");
-    }
-  
-    img:nth-child(2) {
-      content: url("../../assets/icons/filter/wifi.webp");
-    }
-  
-    img:nth-child(3) {
-      content: url("../../assets/icons/filter/car.webp");
-    }
-  
-    img:nth-child(4) {
-      content: url("../../assets/icons/filter/snowflake.webp");
-    }
-  
-    img:nth-child(5) {
-      content: url("../../assets/icons/filter/weight.webp");
-    }
-  
-    img:nth-child(6) {
-      content: url("../../assets/icons/filter/no-smoking.webp");
-    }
-  
-    img:nth-child(7) {
-      content: url("../../assets/icons/filter/drink.webp");
-    }
-    */
 }
