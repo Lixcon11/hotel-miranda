@@ -1,0 +1,13 @@
+@import "./commonElements/commons.scss";
+
+.restaurant {
+    margin: 0px 15px;
+    box-shadow: 0px 14px 24px 0px #B8B8B81A;
+
+    >p:first-of-type {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+
+}
