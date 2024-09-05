@@ -1949,6 +1949,15 @@ img.icon--larger {
   cursor: pointer;
 }
 
+.hello {
+  text-align: center;
+}
+.hello p:first-of-type {
+  font-size: 32px;
+  letter-spacing: -1px;
+  line-height: 40px;
+}
+
 .restaurant {
   margin: 0px 15px;
   box-shadow: 0px 14px 24px 0px rgba(184, 184, 184, 0.1019607843);
@@ -1956,6 +1965,20 @@ img.icon--larger {
 .restaurant > p:first-of-type {
   font-size: 40px;
   line-height: 50px;
+}
+
+.true-facts article div {
+  display: inline-block;
+}
+.true-facts article div p {
+  font-size: 60px;
+  letter-spacing: -1.8px;
+  font-family: "Old Standard TT";
+  color: #222;
+}
+.true-facts article div h4 {
+  font-size: 16px;
+  font-family: Roboto;
 }
 
 html, * {
